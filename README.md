@@ -21,6 +21,21 @@ This project leverages the Internet of Things (IoT) approach to reduce costs com
 - **Heartbeat Sensor**: Monitors heart rate.
 
 
+## Libraries Used
+
+### Android App
+
+- **Jetpack Compose**: For building the UI with modern and efficient composables.
+- **Retrofit**: For making network requests and handling API interactions.
+- **MPAndroidChart**: For displaying line charts and other chart types.
+
+### ESP32
+
+- **WiFi**:  For Wi-Fi connectivity and network management.
+- **MAX30100_PulseOximeter**:  For interfacing with the pulse oximeter and heartbeat sensor.
+- **WebServer**:  For hosting the web server on the ESP32.
+- **Wire**:  For I2C communication with the sensors.
+
 ## Installation
 
 ### Android App Setup
@@ -70,9 +85,8 @@ This project leverages the Internet of Things (IoT) approach to reduce costs com
 - **ECG Integration**:
    - Planned integration of ECG functionality for more comprehensive health monitoring.
 
-## Contributing
 
-Feel free to contribute to this project by submitting pull requests or opening issues. For detailed guidelines, please refer to the `CONTRIBUTING.md` file.
+
 
 
 
