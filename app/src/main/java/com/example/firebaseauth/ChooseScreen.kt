@@ -43,7 +43,7 @@ fun ChooseScreen(navController: NavController) {
                 color = Color(0xFF000080),
                 fontSize = 30.sp,
                 fontWeight = FontWeight.Bold,
-                modifier = Modifier.padding(top = 16.dp, bottom = 80.dp),
+                modifier = Modifier.padding(top = 10.dp, bottom = 100.dp),
                 textAlign = TextAlign.Center
             )
 
@@ -52,36 +52,36 @@ fun ChooseScreen(navController: NavController) {
                 contentDescription = null,
                 contentScale = ContentScale.Fit,
                 modifier = Modifier
-                    .height(229.dp)
-                    .width(307.dp)
+                    .height(300.dp)
+                    .width(200.dp)
                     .align(Alignment.CenterHorizontally)
-                    .padding(bottom = 50.dp)
+                    .padding(bottom = 100.dp)
             )
+//
+//            Button(
+//                onClick = {
+//                    navController.navigate(Routes.SIGN_UP)
+//                },
+//                // colors = ButtonDefaults.buttonColors(containerColor = Color.Green),
+//
+//                modifier = Modifier
+//
+//                    .width(326.dp)
+//                    .padding(bottom = 30.dp)
+//                    .align(Alignment.CenterHorizontally)
+//            ) {
+//                Text(
+//                    text = "Sign Up",
+//                    fontWeight = FontWeight.Bold,
+//                    fontSize = 20.sp,
+//                    textAlign = TextAlign.Center,
+//                    modifier = Modifier.padding(12.dp)
+//                )
+//            }
 
             Button(
                 onClick = {
-                    navController.navigate(Routes.SIGN_UP)
-                },
-                // colors = ButtonDefaults.buttonColors(containerColor = Color.Green),
-
-                modifier = Modifier
-
-                    .width(326.dp)
-                    .padding(bottom = 30.dp)
-                    .align(Alignment.CenterHorizontally)
-            ) {
-                Text(
-                    text = "Sign Up",
-                    fontWeight = FontWeight.Bold,
-                    fontSize = 20.sp,
-                    textAlign = TextAlign.Center,
-                    modifier = Modifier.padding(12.dp)
-                )
-            }
-
-            Button(
-                onClick = {
-                    navController.navigate(Routes.SIGN_IN)
+                    navController.navigate(Routes.DASHBOARD)
                 },
                 //colors = ButtonDefaults.buttonColors(containerColor = Color.Green),
 
@@ -92,7 +92,7 @@ fun ChooseScreen(navController: NavController) {
                     .align(Alignment.CenterHorizontally)
             ) {
                 Text(
-                    text = "Login as guest",
+                    text = "Check Vitals!",
                     style = TextStyle(
                         fontWeight = FontWeight.Bold,
                         fontSize = 20.sp,
@@ -103,29 +103,29 @@ fun ChooseScreen(navController: NavController) {
                 )
             }
 
-            Button(
-                onClick = {
-                    navController.navigate(Routes.SIGN_IN)
-                },
-                //colors = ButtonDefaults.buttonColors(containerColor = Color.White),
-                modifier = Modifier
-                    //.height(64.dp)
-                    .width(326.dp)
-                    .padding(bottom = 16.dp)
-                    .align(Alignment.CenterHorizontally)
-
-            ) {
-                Text(
-                    text = "Login",
-                    style = TextStyle(
-                        fontWeight = FontWeight.Bold,
-                        fontSize = 20.sp,
-                        color = Color.White // Set text color to White for better visibility on gray background
-                    ),
-                    textAlign = TextAlign.Center,
-                    modifier = Modifier.padding(12.dp)
-                )
-            }
+//            Button(
+//                onClick = {
+//                    navController.navigate(Routes.SIGN_IN)
+//                },
+//                //colors = ButtonDefaults.buttonColors(containerColor = Color.White),
+//                modifier = Modifier
+//                    //.height(64.dp)
+//                    .width(326.dp)
+//                    .padding(bottom = 16.dp)
+//                    .align(Alignment.CenterHorizontally)
+//
+//            ) {
+//                Text(
+//                    text = "Login",
+//                    style = TextStyle(
+//                        fontWeight = FontWeight.Bold,
+//                        fontSize = 20.sp,
+//                        color = Color.White // Set text color to White for better visibility on gray background
+//                    ),
+//                    textAlign = TextAlign.Center,
+//                    modifier = Modifier.padding(12.dp)
+//                )
+//            }
         }
     }
 }

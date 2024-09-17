@@ -6,6 +6,10 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.example.firebaseauth.ChooseScreen
+import com.example.firebaseauth.Dashboard
+import com.example.firebaseauth.HeartRateHistoryScreen
+import com.example.firebaseauth.LineChart
+import com.example.firebaseauth.SpO2HistoryScreen
 import com.example.firebaseauth.StartScreen
 import com.example.firebaseauth.login_screen.SignInScreen
 import com.example.firebaseauth.sign_up.SignUpScreen
@@ -33,6 +37,20 @@ fun navigationgraph(
             composable(Routes.CHOOSE) {
                 ChooseScreen(navController)
             }
+
+            composable(Routes.DASHBOARD) {
+                Dashboard(navController)
+            }
+
+            composable(Routes.SpO2) {
+                SpO2HistoryScreen()
+            }
+
+            composable(Routes.HeartBeat) {
+                HeartRateHistoryScreen()
+            }
+
+
 
         })
 

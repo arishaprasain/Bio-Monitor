@@ -36,14 +36,28 @@ fun StartScreen(navController: NavController) {
             .fillMaxSize()
             .background(Color.White),
         horizontalAlignment = Alignment.CenterHorizontally,
-        verticalArrangement = Arrangement.spacedBy(100.dp, Alignment.CenterVertically)
+        verticalArrangement = Arrangement.spacedBy(25.dp, Alignment.CenterVertically)
     ) {
         Text(
-            text = "BioMonitor",
-            color = Color(0xFF440785),
+            text = "Bio",
+            color = Color(0xFF440790),
             fontSize = 36.sp,
+            textAlign = TextAlign.Center,
             fontWeight = FontWeight.Bold,
             modifier = Modifier.padding(top = 50.dp)
+                .offset(x = -50.dp)
+
+        )
+        Text(
+            text = "Monitor",
+            color = Color.Black,
+            fontSize = 36.sp,
+            fontWeight = FontWeight.Bold,
+            modifier = Modifier.padding(top = 100.dp)
+                .offset(x = 46.dp)
+                .offset(y = -175.dp)
+
+
         )
 
         Image(
@@ -52,34 +66,48 @@ fun StartScreen(navController: NavController) {
             contentScale = ContentScale.Crop,
             modifier = Modifier
 
-                .height(243.dp)
+                .offset(y = -170.dp)
+
                 .width(288.dp)
+                .height(280.dp)
         )
 
         Text(
-            text = "Monitoring Your Health with Precision",
+            text = "Monitor your health at home!",
             color = Color.Black,
-            fontSize = 18.sp,
+            fontSize = 20.sp,
+            fontWeight = FontWeight.Bold,
             textAlign = TextAlign.Center ,
             modifier = Modifier
-                .offset(y = -50.dp)
+                .width(500.dp)
+
+                .offset(y = -150.dp)
+
+
         )
 
-        Spacer(modifier = Modifier.weight(1f))
+        //Spacer(modifier = Modifier.weight(1f))
+
+
 
         Button(
             onClick = {
                 navController.navigate(Routes.CHOOSE)
             },
-            colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF440785)),
+            //colors = ButtonDefaults.buttonColors(containerColor = Color.Green),
+
             modifier = Modifier
-                .offset(y = -50.dp) // Adjust the vertical position here
-                .height(72.dp)
-                .width(192.dp)
+                .height(75.dp)
+                .width(200.dp)
+                .padding(bottom = 10.dp)
+                .align(Alignment.CenterHorizontally)
+                .offset(y = -100.dp)
         ) {
             Text(
-                text = "Get Started",
-                color = Color.White
+                text = "Get Started!",
+                color = Color.White,
+                fontSize = 20.sp,
+                fontWeight = FontWeight.Bold
             )
         }
     }
