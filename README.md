@@ -9,7 +9,7 @@ This project leverages the Internet of Things (IoT) approach to reduce costs com
 ## Features
 
 - **ESP32 Web Server**: The ESP32 operates as an access point and hosts a web server to serve health data.
-- **Android App Integration**: The Android application uses the Wi-Fi module to perform GET requests and retrieve live health data.
+- **Android App Integration**: The Android application uses the Wi-Fi module to retrieve live health data.
 - **Real-time Monitoring**: Displays live data from the pulse oximeter and heartbeat sensors.
 - **Line Charts**: Visual representation of data through line charts for easy tracking of health metrics.
 - **Cost-effective**: Provides an affordable alternative to expensive analog health monitors used in hospitals.
